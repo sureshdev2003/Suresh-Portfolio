@@ -53,62 +53,29 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={AboutImg} className="img-fluid" style={{height:"500px", width:"350px", borderRadius:"20px", boxShadow:"5px 5px 25px 5px #8a49a8"}} alt="avatar" />
-            </Tilt>
-          </Col>
+         <Col
+  md={4}
+  className="myAvtar d-flex justify-content-center align-items-center"
+>
+  <Tilt>
+    <img
+      src={AboutImg}
+      className="img-fluid"
+      style={{
+        height: "400px",
+        width: "400px",
+        borderRadius: "50%",
+        boxShadow: "5px 5px 25px 5px #8a49a8",
+        objectFit: "cover",
+       
+      }}
+      alt="avatar"
+    />
+  </Tilt>
+</Col>
+
         </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/sureshdev2003"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://discord.com/channels/@me"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  < FaDiscord/>
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/sureshdeveloper/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/mr_suresh_offical_17/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+       
       </Container>
     </Container>
   );

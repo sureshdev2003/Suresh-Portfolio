@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { ImTrophy } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -81,6 +82,25 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
+              <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/certificates "
+                onClick={() => updateExpanded(false)}
+              >
+                <ImBlog style={{ marginBottom: "2px" }} /> Certificates
+              </Nav.Link>
+            </Nav.Item>
+
+             <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/achivements "
+                onClick={() => updateExpanded(false)}
+              >
+                <ImTrophy style={{ marginBottom: "2px" }} /> Achivements
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -92,15 +112,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                href="./contact"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Contact Me
-              </Nav.Link>
-            </Nav.Item> */}
+          
 
             <Nav.Item className="fork-btn">
               <Button

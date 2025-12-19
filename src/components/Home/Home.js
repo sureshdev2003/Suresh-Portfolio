@@ -1,9 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Profile from "../../Assets/profile.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Project from "../Projects/ProjectHome";
+import CertificatesHome from "../Certificates/CertificatesHome";
+import Techstack from "../About/Techstack";
+import AchivementsHome from "../Achivements/AchivementsHome";
 
 function Home() {
   return (
@@ -30,18 +34,27 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={Profile}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "550px" }}
-              />
-            </Col>
+           <Col md={5} className="d-flex justify-content-center align-items-center">
+  <div className="glass-profile-box">
+    <img
+      src={Profile}
+      alt="home pic"
+      className="glass-profile-img"
+    />
+  </div>
+</Col>
+
           </Row>
         </Container>
       </Container>
       <Home2 />
+      <h1 className="project-heading">
+          Professional <strong className="purple">Skillset </strong>
+        </h1>
+         <Techstack />       
+      <Project/>
+      <AchivementsHome/>
+      <CertificatesHome/>
     </section>
   );
 }

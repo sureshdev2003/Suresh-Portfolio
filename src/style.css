@@ -263,6 +263,55 @@ button:focus {
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
+/* Glassmorphism Profile Box */
+.glass-profile-box {
+  width: 740px!important;
+  height: 580px;
+
+  background: rgba(20, 20, 20, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.6),
+    inset 0 0 20px rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Profile Image */
+.glass-profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  z-index: 2;
+}
+
+/* Subtle glass glow */
+.glass-profile-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .glass-profile-box {
+    width: 260px;
+    height: 300px;
+  }
+}
+
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -741,4 +790,122 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Certificates */
+.certificates-card-container{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+}
+.certificates-container {
+  position: relative !important;
+  padding-top:90px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+
+}
+.certificates-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  text-align: center !important;
+}
+
+
+.certificates-card {
+  width: 460px !important;
+  height: auto !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease !important;
+  padding: 20px !important;
+  margin-bottom: 20px !important;
+  text-align: center !important;
+  border: none !important;
+}
+.certificates-card:hover {
+  transform: translateY(-10px) !important;
+}
+.certificates-card-image img {
+  width: 400px!important;
+  height: auto !important;
+  border-radius: 5px !important;
+  margin-bottom: 15px !important;
+}
+.certificates-card-content{
+  color: white !important;
+}
+.certificates-card-content h3 {
+  font-size: 1.5em !important;
+  margin-bottom: 10px !important;
+}
+.certificates-card-content p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #a9a9a9;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Achivements */
+.achivements-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+.achivements-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  text-align: center !important;
+}
+.achivements-container{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+} 
+.achivements-card {
+  width: 400px !important;
+  height: auto !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease !important;
+  padding: 20px !important;
+  margin: 15px !important;
+  text-align: center !important;
+  border: none !important;
+}
+.achivements-card:hover {
+  transform: translateY(-10px) !important;
+}
+.achivements-card img {
+  width: 350px!important;
+  height: auto !important;
+  border-radius: 5px !important;
+  margin-bottom: 15px !important;
+  border-radius: 20px;
+
+}
+
+/* resume botton */
 

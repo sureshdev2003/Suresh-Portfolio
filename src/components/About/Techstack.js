@@ -7,6 +7,9 @@ import {
   DiNodejs,
   DiMongodb,
   DiMysql,
+  DiBootstrap,
+  DiAndroid,
+  
   
   DiGit,
   
@@ -20,35 +23,41 @@ import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ width:"100%", justifyContent: "center", paddingBottom: "50px" }}>
       
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <DiJavascript1 />
       </Col>
      
       
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }}  className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <DiNodejs />
       </Col>
-     <Col xs={4} md={2} className="tech-icons">
+     <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <SiExpress />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <DiMongodb />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <SiNextdotjs />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <DiMysql />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
         <DiGit />
       </Col>
-    
+     <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
+        <DiBootstrap />
+      </Col>
+        <Col xs={4} md={2} style={{ color: "#fff" }} className="tech-icons">
+        <DiAndroid />
+
+      </Col>
       
       
    
