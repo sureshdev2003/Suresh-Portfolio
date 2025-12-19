@@ -307,8 +307,13 @@ button:focus {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .glass-profile-box {
-    width: 260px;
+    width: 300px!important;
     height: 300px;
+  }
+  .glass-profile-box img{
+    width: 280px;
+    height: auto; 
+    margin-left: 40px;
   }
 }
 
