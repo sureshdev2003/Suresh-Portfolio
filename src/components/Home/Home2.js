@@ -1,14 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Profile from "../../Assets/profile.png";
+
 import AboutImg from "../../Assets/about-us.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn,FaDiscord } from "react-icons/fa";
+
 
 function Home2() {
   return (
